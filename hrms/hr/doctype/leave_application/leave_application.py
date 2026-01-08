@@ -111,6 +111,19 @@ class LeaveApplication(Document, PWANotificationsMixin):
 			self.notify_employee()
 
 		self.create_leave_ledger_entry()
+		# create a reverse ledger entry for backdated leave applications for whom expiry entry already exists
+		leave_allocation = self.get_leave_allocation()
+		if not leave_allocation:
+			return
+		to_date = leave_allocation.get("to_date")
+		can_expire = not frappe.db.get_value("Leave Type", self.leave_type, "is_carry_forward")
+
+		if to_date < getdate() and can_expire:
+			args = frappe._dict(
+				leaves=self.total_leave_days, from_date=to_date, to_date=to_date, is_carry_forward=0
+			)
+			create_leave_ledger_entry(self, args)
+
 		self.reload()
 
 	def before_cancel(self):
@@ -249,6 +262,22 @@ class LeaveApplication(Document, PWANotificationsMixin):
 					"Leave cannot be applied/cancelled before {0}, as leave balance has already been carry-forwarded in the future leave allocation record {1}"
 				).format(formatdate(future_allocation[0].from_date), future_allocation[0].name)
 			)
+
+	def get_leave_allocation(self):
+		date = self.posting_date or getdate()
+		LeaveAllocation = frappe.qb.DocType("Leave Allocation")
+		leave_allocation = (
+			frappe.qb.from_(LeaveAllocation)
+			.select(LeaveAllocation.to_date)
+			.where(
+				((LeaveAllocation.from_date <= date) & (date <= LeaveAllocation.to_date))
+				& (LeaveAllocation.docstatus == 1)
+				& (LeaveAllocation.leave_type == self.leave_type)
+				& (LeaveAllocation.employee == self.employee)
+			)
+		).run(as_dict=True)
+
+		return leave_allocation[0] if leave_allocation else None
 
 	def update_attendance(self):
 		if self.status != "Approved":
@@ -972,12 +1001,12 @@ def get_leave_balance_on(
 
 	allocation_records = get_leave_allocation_records(employee, date, leave_type)
 	allocation = allocation_records.get(leave_type, frappe._dict())
-
-	end_date = allocation.to_date if cint(consider_all_leaves_in_the_allocation_period) else date
+	end_date = (
+		allocation.to_date if (allocation and cint(consider_all_leaves_in_the_allocation_period)) else date
+	)
 	cf_expiry = get_allocation_expiry_for_cf_leaves(employee, leave_type, to_date, allocation.from_date)
 
 	leaves_taken = get_leaves_for_period(employee, leave_type, allocation.from_date, end_date)
-
 	manually_expired_leaves = get_manually_expired_leaves(
 		employee, leave_type, allocation.from_date, end_date
 	)
@@ -1149,7 +1178,7 @@ def get_manually_expired_leaves(
 			& (ledger.employee == employee)
 			& (ledger.leave_type == leave_type)
 			& (ledger.from_date >= from_date)
-			& (ledger.to_date <= end_date)
+			& (ledger.to_date < end_date)
 			& (ledger.transaction_type == "Leave Allocation")
 			& ((ledger.is_expired == 1) & (ledger.is_carry_forward == 0))
 		)
@@ -1335,8 +1364,6 @@ def add_leaves(events, start, end, filters=None):
 		"docstatus",
 		"employee_name",
 		"leave_type",
-		"(1) as allDay",
-		"'Leave Application' as doctype",
 	]
 
 	show_leaves_of_all_members = frappe.db.get_single_value(
@@ -1346,9 +1373,10 @@ def add_leaves(events, start, end, filters=None):
 		leave_applications = frappe.get_all("Leave Application", filters=filters, fields=fields)
 	else:
 		leave_applications = frappe.get_list("Leave Application", filters=filters, fields=fields)
-
 	for d in leave_applications:
 		d["title"] = f"{d['employee_name']} ({d['leave_type']})"
+		d["allDay"] = 1
+		d["doctype"] = "Leave Application"
 		del d["employee_name"]
 		del d["leave_type"]
 		if d not in events:
