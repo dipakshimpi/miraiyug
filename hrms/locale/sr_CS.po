@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: frappe\n"
 "Report-Msgid-Bugs-To: contact@frappe.io\n"
 "POT-Creation-Date: 2026-02-01 09:43+0000\n"
-"PO-Revision-Date: 2026-02-03 00:52\n"
+"PO-Revision-Date: 2026-02-05 01:18\n"
 "Last-Translator: contact@frappe.io\n"
 "Language-Team: Serbian (Latin)\n"
 "MIME-Version: 1.0\n"
@@ -4284,7 +4284,7 @@ msgstr "Datum početka {0} ne može biti pre datuma zaposlenja {1}"
 
 #: hrms/payroll/doctype/additional_salary/additional_salary.py:115
 msgid "From and to dates are madatory for recurring type additional salaries."
-msgstr ""
+msgstr "Datum početka i datum završetka su obavezni za ponavljajuće dodatne zarade."
 
 #: hrms/hr/utils.py:199
 msgid "From date can not be less than employee's joining date"
@@ -6832,7 +6832,7 @@ msgstr "Dani odsustva nisu dodeljeni."
 
 #: frontend/src/views/Login.vue:53
 msgid "No login methods are available. Please contact your administrator."
-msgstr ""
+msgstr "Nema dostupnih metoda prijavljivanja. Molimo Vas da se obratite administratoru."
 
 #: hrms/hr/page/team_updates/team_updates.js:49
 msgid "No more updates"
@@ -7600,7 +7600,7 @@ msgstr "Datum obračuna zarada ne može biti u prošlosti. Ovo osigurava da se z
 
 #: hrms/payroll/doctype/additional_salary/additional_salary.py:117
 msgid "Payroll date is mandatory for non-recurring type additional salaries."
-msgstr ""
+msgstr "Datum obračuna zarade je obavezan za jednokratne dodatne zarade."
 
 #. Description of the 'Pending Amount' (Currency) field in DocType 'Employee
 #. Advance'
