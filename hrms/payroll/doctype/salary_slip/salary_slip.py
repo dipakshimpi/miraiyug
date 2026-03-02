@@ -67,13 +67,12 @@ class SalarySlip(TransactionBase):
 	from typing import TYPE_CHECKING
 
 	if TYPE_CHECKING:
-		from avunu.avunu.custom.salary_detail import SalaryDetail
-		from avunu.avunu.custom.salary_slip_timesheet import SalarySlipTimesheet
-
 		from frappe.types import DF
 
 		from hrms.payroll.doctype.employee_benefit_detail.employee_benefit_detail import EmployeeBenefitDetail
+		from hrms.payroll.doctype.salary_detail.salary_detail import SalaryDetail
 		from hrms.payroll.doctype.salary_slip_leave.salary_slip_leave import SalarySlipLeave
+		from hrms.payroll.doctype.salary_slip_timesheet.salary_slip_timesheet import SalarySlipTimesheet
 
 		absent_days: DF.Float
 		accrued_benefits: DF.Table[EmployeeBenefitDetail]
