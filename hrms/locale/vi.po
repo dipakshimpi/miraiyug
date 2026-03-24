@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: frappe\n"
 "Report-Msgid-Bugs-To: contact@frappe.io\n"
 "POT-Creation-Date: 2026-03-22 09:44+0000\n"
-"PO-Revision-Date: 2026-03-23 13:22\n"
+"PO-Revision-Date: 2026-03-24 13:19\n"
 "Last-Translator: contact@frappe.io\n"
 "Language-Team: Vietnamese\n"
 "MIME-Version: 1.0\n"
@@ -1129,7 +1129,7 @@ msgstr ""
 #: hrms/hr/doctype/leave_application/leave_application.json
 #: hrms/hr/doctype/shift_request/shift_request.json
 msgid "Approved"
-msgstr ""
+msgstr "Đã được phê duyệt"
 
 #. Label of the approver (Link) field in DocType 'Department Approver'
 #. Label of the approver (Link) field in DocType 'Shift Assignment Tool'
@@ -1142,7 +1142,7 @@ msgstr ""
 
 #: hrms/setup.py:133 hrms/setup.py:235
 msgid "Approvers"
-msgstr ""
+msgstr "Người phê duyệt"
 
 #: hrms/hr/report/monthly_attendance_sheet/monthly_attendance_sheet.js:39
 #: hrms/public/js/salary_slip_deductions_report_filters.js:22
@@ -1887,7 +1887,7 @@ msgstr ""
 
 #: frontend/src/components/CheckInPanel.vue:122
 msgid "Check Out"
-msgstr ""
+msgstr "Kiểm tra"
 
 #. Label of the check_vacancies (Check) field in DocType 'HR Settings'
 #: hrms/hr/doctype/hr_settings/hr_settings.json
@@ -2250,7 +2250,7 @@ msgstr ""
 #. Advance'
 #: hrms/hr/doctype/employee_advance/employee_advance.json
 msgid "Currency "
-msgstr ""
+msgstr "Tiền tệ "
 
 #: hrms/payroll/doctype/salary_structure_assignment/salary_structure_assignment.py:127
 msgid "Currency of selected Income Tax Slab should be {0} instead of {1}"
@@ -2523,7 +2523,7 @@ msgstr ""
 #: hrms/hr/doctype/shift_assignment_tool/shift_assignment_tool.js:204
 #: hrms/setup.py:207
 msgid "Default Shift"
-msgstr ""
+msgstr "Shift mặc định"
 
 #: frontend/src/components/FileUploaderView.vue:49
 msgid "Delete Attachment"
@@ -2848,7 +2848,7 @@ msgstr ""
 #: hrms/hr/workspace/people/people.json hrms/hr/workspace/tenure/tenure.json
 #: hrms/workspace_sidebar/tenure.json
 msgid "Employee Analytics"
-msgstr ""
+msgstr "Phân tích nhân viên"
 
 #. Name of a DocType
 #. Label of a Link in the Shift & Attendance Workspace
@@ -3081,7 +3081,7 @@ msgstr ""
 #: hrms/hr/workspace/people/people.json hrms/hr/workspace/tenure/tenure.json
 #: hrms/workspace_sidebar/tenure.json
 msgid "Employee Information"
-msgstr ""
+msgstr "Thông tin nhân viên"
 
 #. Name of a report
 #. Label of a Link in the Leaves Workspace
@@ -3471,7 +3471,7 @@ msgstr ""
 #: hrms/payroll/doctype/bulk_salary_structure_assignment/bulk_salary_structure_assignment.json
 #: hrms/setup.py:186 hrms/templates/generators/job_opening.html:141
 msgid "Employment Type"
-msgstr ""
+msgstr "Loại việc làm"
 
 #. Label of the enable_auto_attendance (Check) field in DocType 'Shift Type'
 #: hrms/hr/doctype/shift_type/shift_type.json
@@ -3885,7 +3885,7 @@ msgstr ""
 #: hrms/hr/doctype/expense_claim/expense_claim.json hrms/setup.py:153
 #: hrms/setup.py:241
 msgid "Expense Approver"
-msgstr ""
+msgstr "Người phê duyệt chi phí"
 
 #. Label of the expense_approver_mandatory_in_expense_claim (Check) field in
 #. DocType 'HR Settings'
@@ -4221,7 +4221,7 @@ msgstr ""
 #. Label of a Card Break in the Expenses Workspace
 #: hrms/hr/workspace/expenses/expenses.json
 msgid "Fleet Management"
-msgstr ""
+msgstr "Quản lý đội tàu"
 
 #. Label of the flexible_benefit (Check) field in DocType 'Employee Benefit
 #. Ledger'
@@ -4640,7 +4640,7 @@ msgstr ""
 
 #: hrms/setup.py:322
 msgid "HR"
-msgstr ""
+msgstr "nhân sự"
 
 #: hrms/setup.py:59
 msgid "HR & Payroll"
@@ -4719,7 +4719,7 @@ msgstr ""
 
 #: hrms/setup.py:215
 msgid "Health Insurance"
-msgstr ""
+msgstr "Bảo hiểm y tế"
 
 #. Label of the health_insurance_name (Data) field in DocType 'Employee Health
 #. Insurance'
@@ -7776,7 +7776,7 @@ msgstr ""
 #: hrms/hr/workspace/performance/performance.json
 #: hrms/workspace_sidebar/performance.json
 msgid "Performance"
-msgstr ""
+msgstr "Hiệu suất"
 
 #: frontend/src/components/FormView.vue:291
 msgid "Permanently cancel {0}"
@@ -8381,7 +8381,7 @@ msgstr ""
 #: hrms/hr/workspace/recruitment/recruitment.json
 #: hrms/workspace_sidebar/recruitment.json
 msgid "Recruitment"
-msgstr ""
+msgstr "Tuyển dụng"
 
 #. Name of a report
 #. Label of a Link in the People Workspace
@@ -8453,7 +8453,7 @@ msgstr ""
 #: frontend/src/components/RequestActionSheet.vue:96
 #: hrms/hr/doctype/shift_assignment_tool/shift_assignment_tool.js:126
 msgid "Reject"
-msgstr ""
+msgstr "Từ chối"
 
 #: hrms/hr/doctype/employee_referral/employee_referral.js:7
 msgid "Reject Employee Referral"
@@ -8589,7 +8589,7 @@ msgstr ""
 
 #: hrms/setup.py:170
 msgid "Required Skills"
-msgstr ""
+msgstr "Kỹ năng cần thiết"
 
 #. Label of the required_for_employee_creation (Check) field in DocType
 #. 'Employee Boarding Activity'
@@ -9574,7 +9574,7 @@ msgstr ""
 
 #: hrms/setup.py:139 hrms/setup.py:260
 msgid "Shift Request Approver"
-msgstr ""
+msgstr "Người phê duyệt yêu cầu thay đổi"
 
 #. Label of the shift_request_filters_section (Section Break) field in DocType
 #. 'Shift Assignment Tool'
@@ -9754,7 +9754,7 @@ msgstr ""
 #. Map'
 #: hrms/hr/doctype/employee_skill_map/employee_skill_map.json hrms/setup.py:176
 msgid "Skills"
-msgstr ""
+msgstr "Kỹ năng"
 
 #. Label of the skip_auto_attendance (Check) field in DocType 'Employee
 #. Checkin'
@@ -10536,7 +10536,7 @@ msgstr ""
 
 #: hrms/setup.py:803
 msgid "Total Interest Amount"
-msgstr ""
+msgstr "Tổng số tiền lãi"
 
 #: hrms/hr/report/monthly_attendance_sheet/monthly_attendance_sheet.py:168
 msgid "Total Late Entries"
@@ -10606,7 +10606,7 @@ msgstr ""
 
 #: hrms/setup.py:794
 msgid "Total Principal Amount"
-msgstr ""
+msgstr "Tổng số tiền gốc"
 
 #. Label of the total_receivable_amount (Currency) field in DocType 'Full and
 #. Final Statement'
@@ -11148,7 +11148,7 @@ msgstr ""
 #: hrms/hr/workspace/expenses/expenses.json
 #: hrms/workspace_sidebar/expenses.json
 msgid "Vehicle Expenses"
-msgstr ""
+msgstr "Chi phí phương tiện"
 
 #. Label of the vehicle_log (Link) field in DocType 'Expense Claim'
 #. Name of a DocType
