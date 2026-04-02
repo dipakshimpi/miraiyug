@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: frappe\n"
 "Report-Msgid-Bugs-To: contact@frappe.io\n"
 "POT-Creation-Date: 2026-03-29 09:45+0000\n"
-"PO-Revision-Date: 2026-03-30 13:52\n"
+"PO-Revision-Date: 2026-04-02 14:12\n"
 "Last-Translator: contact@frappe.io\n"
 "Language-Team: Serbian (Latin)\n"
 "MIME-Version: 1.0\n"
@@ -4695,7 +4695,7 @@ msgstr "HR podešavanja"
 #: hrms/desktop_icon/hr_setup.json hrms/hr/workspace/hr_setup/hr_setup.json
 #: hrms/workspace_sidebar/hr_setup.json
 msgid "HR Setup"
-msgstr ""
+msgstr "HR postavke"
 
 #: hrms/config/desktop.py:5
 msgid "HRMS"
