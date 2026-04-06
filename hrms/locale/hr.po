@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: frappe\n"
 "Report-Msgid-Bugs-To: contact@frappe.io\n"
-"POT-Creation-Date: 2026-03-29 09:45+0000\n"
-"PO-Revision-Date: 2026-03-30 13:52\n"
+"POT-Creation-Date: 2026-04-05 09:45+0000\n"
+"PO-Revision-Date: 2026-04-06 14:49\n"
 "Last-Translator: contact@frappe.io\n"
 "Language-Team: Croatian\n"
 "MIME-Version: 1.0\n"
@@ -868,7 +868,7 @@ msgstr "Godišnja Dodjela"
 msgid "Annual Allocation Exceeded"
 msgstr "Godišnja Dodjela je premašena"
 
-#: hrms/setup.py:404
+#: hrms/setup.py:407
 msgid "Annual Salary"
 msgstr "Godišnja Plata"
 
@@ -1120,7 +1120,7 @@ msgstr "Ocjenitelj"
 msgid "Appraisees: {0}"
 msgstr "Ocijenjeni: {0}"
 
-#: hrms/setup.py:396
+#: hrms/setup.py:399
 msgid "Apprentice"
 msgstr "Šegrt"
 
@@ -1783,7 +1783,7 @@ msgstr "Obračunaj Radne Dane Obračuna Plata na osnovu"
 msgid "Calculated in days"
 msgstr "Proračun (u danima)"
 
-#: hrms/setup.py:332
+#: hrms/setup.py:335
 msgid "Calls"
 msgstr "Pozivi"
 
@@ -1860,6 +1860,7 @@ msgid "Cannot update status of Goal groups"
 msgstr "Nije moguće ažurirati status grupa ciljeva"
 
 #. Label of the carry_forward (Check) field in DocType 'Leave Control Panel'
+#. Label of the is_carry_forward (Check) field in DocType 'Leave Type'
 #. Label of the carry_forward_section (Section Break) field in DocType 'Leave
 #. Type'
 #: hrms/hr/doctype/leave_control_panel/leave_control_panel.json
@@ -1873,7 +1874,7 @@ msgstr "Prenesi Naprijed"
 msgid "Carry Forwarded Leaves"
 msgstr "Proslijeđeno Odsustvo"
 
-#: hrms/setup.py:347 hrms/setup.py:348
+#: hrms/setup.py:350 hrms/setup.py:351
 msgid "Casual Leave"
 msgstr "Povremeni Dopust"
 
@@ -2059,7 +2060,7 @@ msgstr "Informacije o Tvrtki"
 msgid "Compensatory Leave Request"
 msgstr "Zahtjev Kompenzacijskog Odsustva"
 
-#: hrms/setup.py:356 hrms/setup.py:357
+#: hrms/setup.py:359 hrms/setup.py:360
 msgid "Compensatory Off"
 msgstr "Kompenzator Isključen"
 
@@ -2854,7 +2855,7 @@ msgid "Employee A/C Number"
 msgstr "Bankovni Račun"
 
 #: hrms/patches/v16_0/create_custom_field_for_employee_advance_in_employee_master.py:11
-#: hrms/setup.py:267
+#: hrms/setup.py:270
 msgid "Employee Advance Account"
 msgstr "Predujamni Račun"
 
@@ -2922,7 +2923,7 @@ msgstr "Registar Pogodnosti"
 #. Label of the employee_benefits_section (Section Break) field in DocType
 #. 'Salary Structure Assignment'
 #: hrms/payroll/doctype/salary_structure_assignment/salary_structure_assignment.json
-#: hrms/setup.py:406
+#: hrms/setup.py:409
 msgid "Employee Benefits"
 msgstr "Beneficije"
 
@@ -3004,6 +3005,10 @@ msgstr "Detalji"
 #: hrms/hr/doctype/training_result/training_result.json
 msgid "Employee Emails"
 msgstr "E-pošta"
+
+#: hrms/overrides/dashboard_overrides.py:25
+msgid "Employee Exit"
+msgstr "Otkaz"
 
 #. Label of the employee_exit_settings_section (Section Break) field in DocType
 #. 'HR Settings'
@@ -3132,7 +3137,7 @@ msgstr "Stanje Odsustva"
 msgid "Employee Leave Balance Summary"
 msgstr "Sažetak Stanja Odsustva"
 
-#: hrms/setup.py:768
+#: hrms/setup.py:771
 msgid "Employee Loan"
 msgstr "Kredit"
 
@@ -3203,7 +3208,7 @@ msgstr "Istorija Karekteristike Personala"
 #: hrms/hr/doctype/employee_referral/employee_referral.json
 #: hrms/hr/doctype/job_applicant/job_applicant.json
 #: hrms/hr/doctype/job_requisition/job_requisition.js:18
-#: hrms/hr/workspace/recruitment/recruitment.json hrms/setup.py:400
+#: hrms/hr/workspace/recruitment/recruitment.json hrms/setup.py:403
 msgid "Employee Referral"
 msgstr "Preporuka"
 
@@ -3851,8 +3856,8 @@ msgstr "Otkazni Upitnik"
 
 #: hrms/hr/doctype/exit_interview/test_exit_interview.py:110
 #: hrms/hr/doctype/exit_interview/test_exit_interview.py:120
-#: hrms/hr/doctype/exit_interview/test_exit_interview.py:122 hrms/setup.py:481
-#: hrms/setup.py:483 hrms/setup.py:504
+#: hrms/hr/doctype/exit_interview/test_exit_interview.py:122 hrms/setup.py:484
+#: hrms/setup.py:486 hrms/setup.py:507
 msgid "Exit Questionnaire Notification"
 msgstr "Obavijest Otkaznog Upitnika"
 
@@ -3915,7 +3920,8 @@ msgstr "Očekivani Skup Vještina"
 #. Name of a role
 #. Label of the expense_approver (Link) field in DocType 'Expense Claim'
 #: hrms/hr/doctype/employee_advance/employee_advance.json
-#: hrms/hr/doctype/expense_claim/expense_claim.json hrms/setup.py:152
+#: hrms/hr/doctype/expense_claim/expense_claim.json
+#: hrms/patches/v15_0/update_approver_custom_fields.py:11 hrms/setup.py:152
 #: hrms/setup.py:241
 msgid "Expense Approver"
 msgstr "Odobravatelj Troškova"
@@ -4295,7 +4301,7 @@ msgstr "Puna i Konačna Odluka na čekanju"
 msgid "Follow via Email"
 msgstr "Prati putem e-pošte"
 
-#: hrms/setup.py:333
+#: hrms/setup.py:336
 msgid "Food"
 msgstr "Hrana"
 
@@ -4437,7 +4443,7 @@ msgstr "Potpuna i Konačna Imovina"
 msgid "Full and Final Outstanding Statement"
 msgstr "Potpuni i Konačni Izvanredni Dogovor"
 
-#: hrms/setup.py:389
+#: hrms/setup.py:392
 msgid "Full-time"
 msgstr "Puno Radno Vrijeme"
 
@@ -4671,7 +4677,7 @@ msgstr "Bruto Do Danas u Godini (Valuta Tvrtke)"
 msgid "Group goal's progress is auto-calculated based on the child goals."
 msgstr "Napredak grupnog cilja se automatski izračunava na osnovu podređenih ciljeva."
 
-#: hrms/setup.py:322
+#: hrms/setup.py:325
 msgid "HR"
 msgstr "Personal"
 
@@ -5212,7 +5218,7 @@ msgstr "Iznos Kamate"
 msgid "Interest Income Account"
 msgstr "Račun Prihoda Kamata"
 
-#: hrms/setup.py:395
+#: hrms/setup.py:398
 msgid "Intern"
 msgstr "Interni"
 
@@ -5261,8 +5267,8 @@ msgstr "Povratne Informacije Intervjua"
 #: hrms/hr/doctype/interview/test_interview.py:309
 #: hrms/hr/doctype/interview/test_interview.py:318
 #: hrms/hr/doctype/interview/test_interview.py:320
-#: hrms/hr/doctype/interview/test_interview.py:327 hrms/setup.py:467
-#: hrms/setup.py:469 hrms/setup.py:502
+#: hrms/hr/doctype/interview/test_interview.py:327 hrms/setup.py:470
+#: hrms/setup.py:472 hrms/setup.py:505
 msgid "Interview Feedback Reminder"
 msgstr "Podsjetnik Povratne Informacije Intervjua"
 
@@ -5277,8 +5283,8 @@ msgstr "Intervju nije Odgođen"
 #: hrms/hr/doctype/interview/test_interview.py:293
 #: hrms/hr/doctype/interview/test_interview.py:302
 #: hrms/hr/doctype/interview/test_interview.py:304
-#: hrms/hr/doctype/interview/test_interview.py:326 hrms/setup.py:455
-#: hrms/setup.py:457 hrms/setup.py:498
+#: hrms/hr/doctype/interview/test_interview.py:326 hrms/setup.py:458
+#: hrms/setup.py:460 hrms/setup.py:501
 msgid "Interview Reminder"
 msgstr "Intervju Podsjetnik"
 
@@ -5456,9 +5462,7 @@ msgid "Is Applicable for Referral Bonus"
 msgstr "Primjenjivo za Preporučeni Bonus"
 
 #. Label of the is_carry_forward (Check) field in DocType 'Leave Ledger Entry'
-#. Label of the is_carry_forward (Check) field in DocType 'Leave Type'
 #: hrms/hr/doctype/leave_ledger_entry/leave_ledger_entry.json
-#: hrms/hr/doctype/leave_type/leave_type.json
 #: hrms/hr/report/leave_ledger/leave_ledger.py:85
 msgid "Is Carry Forward"
 msgstr "Prenesi Naprijed"
@@ -5504,11 +5508,6 @@ msgstr "Komponenta Poreza na Platu"
 #: hrms/hr/report/leave_ledger/leave_ledger.py:97
 msgid "Is Leave Without Pay"
 msgstr "Neplaćeno Odsustvo"
-
-#. Label of the is_optional_leave (Check) field in DocType 'Leave Type'
-#: hrms/hr/doctype/leave_type/leave_type.json
-msgid "Is Optional Leave"
-msgstr "Neobavezno Odsustvo"
 
 #. Label of the is_ppl (Check) field in DocType 'Leave Type'
 #: hrms/hr/doctype/leave_type/leave_type.json
@@ -5596,7 +5595,7 @@ msgstr "Put Prijave za Posao"
 #. Label of the job_description_tab (Tab Break) field in DocType 'Job
 #. Requisition'
 #. Label of the description (Text Editor) field in DocType 'Job Requisition'
-#: hrms/hr/doctype/job_requisition/job_requisition.json hrms/setup.py:410
+#: hrms/hr/doctype/job_requisition/job_requisition.json hrms/setup.py:413
 msgid "Job Description"
 msgstr "Opis Posla"
 
@@ -5891,7 +5890,7 @@ msgstr "Zahtjev Odsustva"
 msgid "Leave Application period cannot be across two non-consecutive leave allocations {0} and {1}."
 msgstr "Period Prijave Odsustva ne može biti između dvije neuzastopne dodjele odsustva {0} i {1}."
 
-#: hrms/setup.py:432 hrms/setup.py:434 hrms/setup.py:494
+#: hrms/setup.py:435 hrms/setup.py:437 hrms/setup.py:497
 msgid "Leave Approval Notification"
 msgstr "Obaviještenje Odobrenja Odsustva"
 
@@ -5904,8 +5903,9 @@ msgstr "Predložak Obaviještenja Odobrenja Odsustva"
 #. Label of the leave_approver (Link) field in DocType 'Leave Application'
 #. Name of a role
 #: hrms/hr/doctype/leave_application/leave_application.json
-#: hrms/hr/doctype/overtime_slip/overtime_slip.json hrms/setup.py:145
-#: hrms/setup.py:248
+#: hrms/hr/doctype/overtime_slip/overtime_slip.json
+#: hrms/patches/v15_0/update_approver_custom_fields.py:19 hrms/setup.py:145
+#: hrms/setup.py:249
 msgid "Leave Approver"
 msgstr "Odobravatelj Odsustva"
 
@@ -6100,7 +6100,7 @@ msgstr "Pravila Odsustva: {0} već je dodijeljeno za {1} za period {2} do {3}"
 msgid "Leave Settings"
 msgstr "Postavke Odsustva"
 
-#: hrms/setup.py:441 hrms/setup.py:443 hrms/setup.py:495
+#: hrms/setup.py:444 hrms/setup.py:446 hrms/setup.py:498
 msgid "Leave Status Notification"
 msgstr "Obavijest Statusa Odsustva"
 
@@ -6178,8 +6178,8 @@ msgstr "Tip Odsutva {0} nije moguće unovčiti"
 
 #. Label of the leave_without_pay (Float) field in DocType 'Salary Slip'
 #: hrms/payroll/doctype/salary_slip/salary_slip.json
-#: hrms/payroll/report/salary_register/salary_register.py:179 hrms/setup.py:381
-#: hrms/setup.py:382
+#: hrms/payroll/report/salary_register/salary_register.py:179 hrms/setup.py:384
+#: hrms/setup.py:385
 msgid "Leave Without Pay"
 msgstr "Neplaćeno Odsustvo"
 
@@ -6210,6 +6210,11 @@ msgstr "Odsustvo se ne može dodijeliti prije {0}, jer je stanje odsustva već p
 #: hrms/hr/doctype/leave_application/leave_application.py:294
 msgid "Leave cannot be applied/cancelled before {0}, as leave balance has already been carry-forwarded in the future leave allocation record {1}"
 msgstr "Odsustvo se ne može primijeniti/otkazati prije {0}, jer je stanje odsustva već preneseno u budući zapis o dodjeli odsustva {1}"
+
+#. Label of the is_optional_leave (Check) field in DocType 'Leave Type'
+#: hrms/hr/doctype/leave_type/leave_type.json
+msgid "Leave for optional holiday"
+msgstr "Odsustvo za neobavezni preznik"
 
 #: hrms/hr/doctype/leave_application/leave_application.py:565
 msgid "Leave of type {0} cannot be longer than {1}."
@@ -6277,7 +6282,7 @@ msgstr "Odsustvo na čekanju za Odobrenje"
 msgid "Leaves for the Leave Type {0} won't be carry-forwarded since carry-forwarding is disabled."
 msgstr "Odsustvo za Tip Odsustva {0} neće biti proslijeđeni jer je prosljeđivanje onemogućeno."
 
-#: hrms/setup.py:412
+#: hrms/setup.py:415
 msgid "Leaves per Year"
 msgstr "Godišnje Odsustvo"
 
@@ -6306,6 +6311,11 @@ msgstr "Radni Vijek"
 msgid "Lime"
 msgstr "Limeta"
 
+#. Label of the limits_tab (Tab Break) field in DocType 'Leave Type'
+#: hrms/hr/doctype/leave_type/leave_type.json
+msgid "Limits"
+msgstr "Ograničenja"
+
 #. Description of the 'Appraisal Linking' (Section Break) field in DocType
 #. 'Goal'
 #: hrms/hr/doctype/goal/goal.json hrms/hr/doctype/goal/goal_tree.js:97
@@ -6326,7 +6336,7 @@ msgstr "Kreditni Račun"
 msgid "Loan Product"
 msgstr "Kreditni Proizvod"
 
-#: hrms/payroll/report/salary_register/salary_register.py:233 hrms/setup.py:761
+#: hrms/payroll/report/salary_register/salary_register.py:233 hrms/setup.py:764
 msgid "Loan Repayment"
 msgstr "Otplata Kredita"
 
@@ -6623,7 +6633,7 @@ msgstr "Maj"
 msgid "Meal Preference"
 msgstr "Preferenca Obroka"
 
-#: hrms/setup.py:334
+#: hrms/setup.py:337
 msgid "Medical"
 msgstr "Zdravstvo"
 
@@ -7083,7 +7093,7 @@ msgstr "Napomena: Vaš platni list je zaštićen lozinkom, lozinka za otključav
 msgid "Nothing to change"
 msgstr "Ništa za promijeniti"
 
-#: hrms/setup.py:413
+#: hrms/setup.py:416
 msgid "Notice Period"
 msgstr "Period Obaveštenja"
 
@@ -7505,7 +7515,7 @@ msgstr "Plaćeno preko Platnog Lista"
 msgid "Parent Goal"
 msgstr "Nadređeni Cilj"
 
-#: hrms/setup.py:390
+#: hrms/setup.py:393
 msgid "Part-time"
 msgstr "Honorarno"
 
@@ -7639,7 +7649,7 @@ msgstr "Ispravak Plaće"
 msgid "Payroll Correction Child"
 msgstr "Podređeni Ispravak Plaće"
 
-#: hrms/setup.py:110 hrms/setup.py:281
+#: hrms/setup.py:110 hrms/setup.py:284
 msgid "Payroll Cost Center"
 msgstr "Centar Troškova Obračuna Plata"
 
@@ -7703,7 +7713,7 @@ msgstr "Broj Obračuna Plata"
 #: hrms/payroll/doctype/bulk_salary_structure_assignment/bulk_salary_structure_assignment.json
 #: hrms/payroll/doctype/payroll_entry/payroll_entry.json
 #: hrms/payroll/doctype/salary_structure_assignment/salary_structure_assignment.json
-#: hrms/setup.py:834
+#: hrms/setup.py:837
 msgid "Payroll Payable Account"
 msgstr "Račun Uplate Obračuna Plata"
 
@@ -7820,7 +7830,7 @@ msgstr "Trajno otkaži {0}"
 msgid "Permanently submit {0}"
 msgstr "Trajno potvrdi {0}"
 
-#: hrms/setup.py:394
+#: hrms/setup.py:397
 msgid "Piecework"
 msgstr "Akord"
 
@@ -8157,15 +8167,15 @@ msgstr "Glavni Iznos"
 msgid "Printed On {0}"
 msgstr "Ispisano {0}"
 
-#: hrms/setup.py:373 hrms/setup.py:374
+#: hrms/setup.py:376 hrms/setup.py:377
 msgid "Privilege Leave"
 msgstr "Privilegirano Odsustvo"
 
-#: hrms/setup.py:391
+#: hrms/setup.py:394
 msgid "Probation"
 msgstr "Probacija"
 
-#: hrms/setup.py:405
+#: hrms/setup.py:408
 msgid "Probationary Period"
 msgstr "Probni Period"
 
@@ -8177,7 +8187,7 @@ msgstr "Obradi Prisustvo Nakon"
 #. Label of the process_payroll_accounting_entry_based_on_employee (Check)
 #. field in DocType 'Payroll Settings'
 #: hrms/payroll/doctype/payroll_settings/payroll_settings.json
-#: hrms/setup.py:845
+#: hrms/setup.py:848
 msgid "Process Payroll Accounting Entry based on Employee"
 msgstr "Obradi Unos Obračuna Plata osnovu osoblja"
 
@@ -8550,7 +8560,7 @@ msgstr "Ukloni ako je nulta vrijednost"
 msgid "Rented Car"
 msgstr "Iznajmljeni Automobil"
 
-#: hrms/setup.py:818 hrms/setup.py:827
+#: hrms/setup.py:821 hrms/setup.py:830
 msgid "Repay From Salary"
 msgstr "Otplati od Plate"
 
@@ -8635,7 +8645,7 @@ msgstr "Obavezno pri kreiranju Personala"
 msgid "Reschedule Interview"
 msgstr "Odgodi Intervju"
 
-#: hrms/setup.py:411
+#: hrms/setup.py:414
 msgid "Responsibilities"
 msgstr "Odgovornosti"
 
@@ -8958,7 +8968,7 @@ msgstr "Platni Registar"
 #: hrms/payroll/doctype/employee_benefit_ledger/employee_benefit_ledger.json
 #: hrms/payroll/doctype/payroll_settings/payroll_settings.json
 #: hrms/payroll/doctype/salary_slip/salary_slip.json
-#: hrms/payroll/workspace/payroll/payroll.json hrms/setup.py:309
+#: hrms/payroll/workspace/payroll/payroll.json hrms/setup.py:312
 #: hrms/workspace_sidebar/payroll.json
 msgid "Salary Slip"
 msgstr "Platna Lista"
@@ -9606,7 +9616,8 @@ msgstr "Lokacija Smjene"
 msgid "Shift Request"
 msgstr "Zahtjev za Smjenu"
 
-#: hrms/setup.py:138 hrms/setup.py:260
+#: hrms/patches/v15_0/update_approver_custom_fields.py:27 hrms/setup.py:138
+#: hrms/setup.py:262
 msgid "Shift Request Approver"
 msgstr "Odobravač Zahtjeva Smjene"
 
@@ -9749,7 +9760,7 @@ msgstr "Prikaži Platni List"
 msgid "Showing"
 msgstr "Trenutno se prikazuje"
 
-#: hrms/setup.py:365 hrms/setup.py:366
+#: hrms/setup.py:368 hrms/setup.py:369
 msgid "Sick Leave"
 msgstr "Bolovanje"
 
@@ -9904,7 +9915,7 @@ msgstr "Statistička Komponenta"
 msgid "Status for Other Half"
 msgstr "Status za drugu polovicu"
 
-#: hrms/setup.py:408
+#: hrms/setup.py:411
 msgid "Stock Options"
 msgstr "Opcije Zaliha"
 
@@ -10252,7 +10263,8 @@ msgstr "Nije dodijeljena struktura plaća za {0}. Prvo dodijelite strukturu pla�
 msgid "There's no Employee with Salary Structure: {0}. Assign {1} to an Employee to preview Salary Slip"
 msgstr "Nema personala sa Strukturom Plate: {0}. Dodijeli {1} da pregleda Platni List"
 
-#. Description of the 'Is Optional Leave' (Check) field in DocType 'Leave Type'
+#. Description of the 'Leave for optional holiday' (Check) field in DocType
+#. 'Leave Type'
 #: hrms/hr/doctype/leave_type/leave_type.json
 msgid "These leaves are holidays permitted by the company however, availing it is optional for an Employee."
 msgstr "Ovi dopusti su praznici koje dopušta tvrtka, međutim, njihovo korištenje je neobavezno za personal."
@@ -10541,11 +10553,11 @@ msgstr "Ukupni Tečajni Rezultat"
 msgid "Total Exemption Amount"
 msgstr "Ukupan Izuzeti Iznos"
 
-#: hrms/setup.py:299
+#: hrms/setup.py:302
 msgid "Total Expense Claim (via Expense Claim)"
 msgstr "Ukupno Potraživanje Troška (preko Potraživanja Troškova)"
 
-#: hrms/setup.py:290
+#: hrms/setup.py:293
 msgid "Total Expense Claim (via Expense Claims)"
 msgstr "Ukupna Potraživanja Troškova (preko Potraživanja Troškova)"
 
@@ -10568,7 +10580,7 @@ msgstr "Ukupno Sati (T)"
 msgid "Total Income Tax"
 msgstr "Ukupan Porez na Prihod"
 
-#: hrms/setup.py:791
+#: hrms/setup.py:794
 msgid "Total Interest Amount"
 msgstr "Ukupan Iznos Kamate"
 
@@ -10601,7 +10613,7 @@ msgstr "Ukupno Dodijeljeno Odsustvo"
 msgid "Total Leaves Encashed"
 msgstr "Ukupno Naplaćeno Odsustvo"
 
-#: hrms/setup.py:805
+#: hrms/setup.py:808
 msgid "Total Loan Repayment"
 msgstr "Ukupna Otplata Kredita"
 
@@ -10638,7 +10650,7 @@ msgstr "Ukupna Isplata"
 msgid "Total Present"
 msgstr "Ukupno Prisutno"
 
-#: hrms/setup.py:782
+#: hrms/setup.py:785
 msgid "Total Principal Amount"
 msgstr "Ukupan Iznos Glavnice"
 
@@ -10859,7 +10871,7 @@ msgstr "Datum Transfera"
 
 #. Label of a Card Break in the Expenses Workspace
 #. Label of a Workspace Sidebar Item
-#: hrms/hr/workspace/expenses/expenses.json hrms/setup.py:336
+#: hrms/hr/workspace/expenses/expenses.json hrms/setup.py:339
 #: hrms/workspace_sidebar/expenses.json
 msgid "Travel"
 msgstr "Putovanja"
@@ -11247,7 +11259,7 @@ msgstr "Upozorenje: Zahtjev Odsustva sadrži sljedeće blokirane datume"
 msgid "Warning: {0} already has an active Shift Assignment {1} for some/all of these dates."
 msgstr "Upozorenje: {0} već ima aktivnu Dodjelu Smjene {1} za neke/sve ove datume."
 
-#: hrms/setup.py:398
+#: hrms/setup.py:401
 msgid "Website Listing"
 msgstr "Poredak Web Stranice"
 
