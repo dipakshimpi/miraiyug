@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: frappe\n"
 "Report-Msgid-Bugs-To: contact@frappe.io\n"
-"POT-Creation-Date: 2026-03-29 09:45+0000\n"
-"PO-Revision-Date: 2026-03-30 13:52\n"
+"POT-Creation-Date: 2026-04-05 09:45+0000\n"
+"PO-Revision-Date: 2026-04-06 14:49\n"
 "Last-Translator: contact@frappe.io\n"
 "Language-Team: Swedish\n"
 "MIME-Version: 1.0\n"
@@ -868,7 +868,7 @@ msgstr "Årlig Tilldelning"
 msgid "Annual Allocation Exceeded"
 msgstr "Årlig Tilldelning Överskriden"
 
-#: hrms/setup.py:404
+#: hrms/setup.py:407
 msgid "Annual Salary"
 msgstr "Årslön"
 
@@ -1120,7 +1120,7 @@ msgstr "Utvärderare"
 msgid "Appraisees: {0}"
 msgstr "Utvärderare: {0}"
 
-#: hrms/setup.py:396
+#: hrms/setup.py:399
 msgid "Apprentice"
 msgstr "Lärling"
 
@@ -1783,7 +1783,7 @@ msgstr "Beräkna Löne Dagar Baserat På"
 msgid "Calculated in days"
 msgstr "Beräknad (i Dagar)"
 
-#: hrms/setup.py:332
+#: hrms/setup.py:335
 msgid "Calls"
 msgstr "Samtal"
 
@@ -1860,6 +1860,7 @@ msgid "Cannot update status of Goal groups"
 msgstr "Kan inte uppdatera status för målgrupper"
 
 #. Label of the carry_forward (Check) field in DocType 'Leave Control Panel'
+#. Label of the is_carry_forward (Check) field in DocType 'Leave Type'
 #. Label of the carry_forward_section (Section Break) field in DocType 'Leave
 #. Type'
 #: hrms/hr/doctype/leave_control_panel/leave_control_panel.json
@@ -1873,7 +1874,7 @@ msgstr "Vidarebefodra"
 msgid "Carry Forwarded Leaves"
 msgstr "Vidarebefordra Frånvaro"
 
-#: hrms/setup.py:347 hrms/setup.py:348
+#: hrms/setup.py:350 hrms/setup.py:351
 msgid "Casual Leave"
 msgstr "Oplanerad Frånvaro"
 
@@ -2059,7 +2060,7 @@ msgstr "Bolag Information"
 msgid "Compensatory Leave Request"
 msgstr "Kompensation Frånvaro Begäran"
 
-#: hrms/setup.py:356 hrms/setup.py:357
+#: hrms/setup.py:359 hrms/setup.py:360
 msgid "Compensatory Off"
 msgstr "Kompensation Av"
 
@@ -2854,7 +2855,7 @@ msgid "Employee A/C Number"
 msgstr "Bank Konto Nummer"
 
 #: hrms/patches/v16_0/create_custom_field_for_employee_advance_in_employee_master.py:11
-#: hrms/setup.py:267
+#: hrms/setup.py:270
 msgid "Employee Advance Account"
 msgstr "Förskott Konto"
 
@@ -2922,7 +2923,7 @@ msgstr "Personal Förmån Register"
 #. Label of the employee_benefits_section (Section Break) field in DocType
 #. 'Salary Structure Assignment'
 #: hrms/payroll/doctype/salary_structure_assignment/salary_structure_assignment.json
-#: hrms/setup.py:406
+#: hrms/setup.py:409
 msgid "Employee Benefits"
 msgstr "Förmåner"
 
@@ -3004,6 +3005,10 @@ msgstr "Detaljer"
 #: hrms/hr/doctype/training_result/training_result.json
 msgid "Employee Emails"
 msgstr "E-post"
+
+#: hrms/overrides/dashboard_overrides.py:25
+msgid "Employee Exit"
+msgstr "Avgång"
 
 #. Label of the employee_exit_settings_section (Section Break) field in DocType
 #. 'HR Settings'
@@ -3132,7 +3137,7 @@ msgstr "Frånvaro Saldo"
 msgid "Employee Leave Balance Summary"
 msgstr "Frånvaro Saldo Översikt"
 
-#: hrms/setup.py:768
+#: hrms/setup.py:771
 msgid "Employee Loan"
 msgstr "Personal Lån"
 
@@ -3203,7 +3208,7 @@ msgstr "Egenskap Historik"
 #: hrms/hr/doctype/employee_referral/employee_referral.json
 #: hrms/hr/doctype/job_applicant/job_applicant.json
 #: hrms/hr/doctype/job_requisition/job_requisition.js:18
-#: hrms/hr/workspace/recruitment/recruitment.json hrms/setup.py:400
+#: hrms/hr/workspace/recruitment/recruitment.json hrms/setup.py:403
 msgid "Employee Referral"
 msgstr "Referens"
 
@@ -3851,8 +3856,8 @@ msgstr "Avgång Frågeformulär"
 
 #: hrms/hr/doctype/exit_interview/test_exit_interview.py:110
 #: hrms/hr/doctype/exit_interview/test_exit_interview.py:120
-#: hrms/hr/doctype/exit_interview/test_exit_interview.py:122 hrms/setup.py:481
-#: hrms/setup.py:483 hrms/setup.py:504
+#: hrms/hr/doctype/exit_interview/test_exit_interview.py:122 hrms/setup.py:484
+#: hrms/setup.py:486 hrms/setup.py:507
 msgid "Exit Questionnaire Notification"
 msgstr "Avgång Frågeförmulär Avisering"
 
@@ -3915,7 +3920,8 @@ msgstr "Förväntad Färdighet"
 #. Name of a role
 #. Label of the expense_approver (Link) field in DocType 'Expense Claim'
 #: hrms/hr/doctype/employee_advance/employee_advance.json
-#: hrms/hr/doctype/expense_claim/expense_claim.json hrms/setup.py:152
+#: hrms/hr/doctype/expense_claim/expense_claim.json
+#: hrms/patches/v15_0/update_approver_custom_fields.py:11 hrms/setup.py:152
 #: hrms/setup.py:241
 msgid "Expense Approver"
 msgstr "Kostnad Godkännare"
@@ -4295,7 +4301,7 @@ msgstr "Pågående Avtal"
 msgid "Follow via Email"
 msgstr "Följ via E-post"
 
-#: hrms/setup.py:333
+#: hrms/setup.py:336
 msgid "Food"
 msgstr "Mat"
 
@@ -4437,7 +4443,7 @@ msgstr "Slutlig Tillgång"
 msgid "Full and Final Outstanding Statement"
 msgstr "Utestående Avgång Avtal"
 
-#: hrms/setup.py:389
+#: hrms/setup.py:392
 msgid "Full-time"
 msgstr "Heltid"
 
@@ -4671,7 +4677,7 @@ msgstr "Brutto Lön Hittills i År (Bolag Valuta)"
 msgid "Group goal's progress is auto-calculated based on the child goals."
 msgstr "Grupp Mål framsteg beräknas automatiskt baserat på underordnade mål."
 
-#: hrms/setup.py:322
+#: hrms/setup.py:325
 msgid "HR"
 msgstr "Personal"
 
@@ -5212,7 +5218,7 @@ msgstr "Ränte Belopp"
 msgid "Interest Income Account"
 msgstr "Ränte Intäkt Konto"
 
-#: hrms/setup.py:395
+#: hrms/setup.py:398
 msgid "Intern"
 msgstr "Intern"
 
@@ -5261,8 +5267,8 @@ msgstr "Intervju Återkoppling"
 #: hrms/hr/doctype/interview/test_interview.py:309
 #: hrms/hr/doctype/interview/test_interview.py:318
 #: hrms/hr/doctype/interview/test_interview.py:320
-#: hrms/hr/doctype/interview/test_interview.py:327 hrms/setup.py:467
-#: hrms/setup.py:469 hrms/setup.py:502
+#: hrms/hr/doctype/interview/test_interview.py:327 hrms/setup.py:470
+#: hrms/setup.py:472 hrms/setup.py:505
 msgid "Interview Feedback Reminder"
 msgstr "Intervju Återkoppling Påminnelse"
 
@@ -5277,8 +5283,8 @@ msgstr "Intervju Ej Ombokad"
 #: hrms/hr/doctype/interview/test_interview.py:293
 #: hrms/hr/doctype/interview/test_interview.py:302
 #: hrms/hr/doctype/interview/test_interview.py:304
-#: hrms/hr/doctype/interview/test_interview.py:326 hrms/setup.py:455
-#: hrms/setup.py:457 hrms/setup.py:498
+#: hrms/hr/doctype/interview/test_interview.py:326 hrms/setup.py:458
+#: hrms/setup.py:460 hrms/setup.py:501
 msgid "Interview Reminder"
 msgstr "Intervju Påminnelse"
 
@@ -5456,9 +5462,7 @@ msgid "Is Applicable for Referral Bonus"
 msgstr "Är Tillämplig för Referens Bonus"
 
 #. Label of the is_carry_forward (Check) field in DocType 'Leave Ledger Entry'
-#. Label of the is_carry_forward (Check) field in DocType 'Leave Type'
 #: hrms/hr/doctype/leave_ledger_entry/leave_ledger_entry.json
-#: hrms/hr/doctype/leave_type/leave_type.json
 #: hrms/hr/report/leave_ledger/leave_ledger.py:85
 msgid "Is Carry Forward"
 msgstr "Är Vidarebefodrad"
@@ -5504,11 +5508,6 @@ msgstr "Är Inkomst Skatt Komponent"
 #: hrms/hr/report/leave_ledger/leave_ledger.py:97
 msgid "Is Leave Without Pay"
 msgstr "Är Obetald Ledighet"
-
-#. Label of the is_optional_leave (Check) field in DocType 'Leave Type'
-#: hrms/hr/doctype/leave_type/leave_type.json
-msgid "Is Optional Leave"
-msgstr "Är Valfri Frånvaro"
 
 #. Label of the is_ppl (Check) field in DocType 'Leave Type'
 #: hrms/hr/doctype/leave_type/leave_type.json
@@ -5596,7 +5595,7 @@ msgstr "Jobb Erbjudande Sökväg"
 #. Label of the job_description_tab (Tab Break) field in DocType 'Job
 #. Requisition'
 #. Label of the description (Text Editor) field in DocType 'Job Requisition'
-#: hrms/hr/doctype/job_requisition/job_requisition.json hrms/setup.py:410
+#: hrms/hr/doctype/job_requisition/job_requisition.json hrms/setup.py:413
 msgid "Job Description"
 msgstr "Jobb Beskrivning"
 
@@ -5891,7 +5890,7 @@ msgstr "Skapa Frånvaro Ansökan"
 msgid "Leave Application period cannot be across two non-consecutive leave allocations {0} and {1}."
 msgstr "Frånvaro Ansökan Period kan inte vara över två ej efterföljande frånvaro tilldelningar {0} och {1}."
 
-#: hrms/setup.py:432 hrms/setup.py:434 hrms/setup.py:494
+#: hrms/setup.py:435 hrms/setup.py:437 hrms/setup.py:497
 msgid "Leave Approval Notification"
 msgstr "Ledighet Godkännande Avisering"
 
@@ -5904,8 +5903,9 @@ msgstr "Frånvaro Godkännande Avisering Mall"
 #. Label of the leave_approver (Link) field in DocType 'Leave Application'
 #. Name of a role
 #: hrms/hr/doctype/leave_application/leave_application.json
-#: hrms/hr/doctype/overtime_slip/overtime_slip.json hrms/setup.py:145
-#: hrms/setup.py:248
+#: hrms/hr/doctype/overtime_slip/overtime_slip.json
+#: hrms/patches/v15_0/update_approver_custom_fields.py:19 hrms/setup.py:145
+#: hrms/setup.py:249
 msgid "Leave Approver"
 msgstr "Ledighet Godkännare"
 
@@ -6100,7 +6100,7 @@ msgstr "Frånvaro Princip: {0} redan tilldelad för personal {1} för period {2}
 msgid "Leave Settings"
 msgstr "Frånvaro Inställningar"
 
-#: hrms/setup.py:441 hrms/setup.py:443 hrms/setup.py:495
+#: hrms/setup.py:444 hrms/setup.py:446 hrms/setup.py:498
 msgid "Leave Status Notification"
 msgstr "Frånvaro Status Avisering"
 
@@ -6178,8 +6178,8 @@ msgstr "Frånvaro Typ {0} är inte uttagbar"
 
 #. Label of the leave_without_pay (Float) field in DocType 'Salary Slip'
 #: hrms/payroll/doctype/salary_slip/salary_slip.json
-#: hrms/payroll/report/salary_register/salary_register.py:179 hrms/setup.py:381
-#: hrms/setup.py:382
+#: hrms/payroll/report/salary_register/salary_register.py:179 hrms/setup.py:384
+#: hrms/setup.py:385
 msgid "Leave Without Pay"
 msgstr "Obetald Frånvaro"
 
@@ -6210,6 +6210,11 @@ msgstr "Frånvaro kan inte tilldelas före {0}, eftersom Frånvaro Saldo redan h
 #: hrms/hr/doctype/leave_application/leave_application.py:294
 msgid "Leave cannot be applied/cancelled before {0}, as leave balance has already been carry-forwarded in the future leave allocation record {1}"
 msgstr "Frånvaro inte kan tillämpas/annulleras före {0}, eftersom Frånvaro Saldo redan är vidarebefordrad framtida frånvaro tilldelning poster {1}"
+
+#. Label of the is_optional_leave (Check) field in DocType 'Leave Type'
+#: hrms/hr/doctype/leave_type/leave_type.json
+msgid "Leave for optional holiday"
+msgstr "Frånvaro för valfri helgdag"
 
 #: hrms/hr/doctype/leave_application/leave_application.py:565
 msgid "Leave of type {0} cannot be longer than {1}."
@@ -6277,7 +6282,7 @@ msgstr "Frånvaro som väntar på Godkännande"
 msgid "Leaves for the Leave Type {0} won't be carry-forwarded since carry-forwarding is disabled."
 msgstr "Frånvaro för Frånvaro Typ {0} kommer inte att vidarebefordras eftersom vidarebefordring är inaktiverad."
 
-#: hrms/setup.py:412
+#: hrms/setup.py:415
 msgid "Leaves per Year"
 msgstr "Frånvaro per År"
 
@@ -6306,6 +6311,11 @@ msgstr "Arbetsliv"
 msgid "Lime"
 msgstr "Lime"
 
+#. Label of the limits_tab (Tab Break) field in DocType 'Leave Type'
+#: hrms/hr/doctype/leave_type/leave_type.json
+msgid "Limits"
+msgstr "Gränser"
+
 #. Description of the 'Appraisal Linking' (Section Break) field in DocType
 #. 'Goal'
 #: hrms/hr/doctype/goal/goal.json hrms/hr/doctype/goal/goal_tree.js:97
@@ -6326,7 +6336,7 @@ msgstr "Lån Konto"
 msgid "Loan Product"
 msgstr "Låneartikel"
 
-#: hrms/payroll/report/salary_register/salary_register.py:233 hrms/setup.py:761
+#: hrms/payroll/report/salary_register/salary_register.py:233 hrms/setup.py:764
 msgid "Loan Repayment"
 msgstr "Låneåterbetalning"
 
@@ -6623,7 +6633,7 @@ msgstr "Maj"
 msgid "Meal Preference"
 msgstr "Måltid Preferens"
 
-#: hrms/setup.py:334
+#: hrms/setup.py:337
 msgid "Medical"
 msgstr "Vård"
 
@@ -7083,7 +7093,7 @@ msgstr "Obs: Lönespecifikation är lösenord skyddad, lösenord för att låsa 
 msgid "Nothing to change"
 msgstr "Inget att ändra"
 
-#: hrms/setup.py:413
+#: hrms/setup.py:416
 msgid "Notice Period"
 msgstr "Avisering Period"
 
@@ -7505,7 +7515,7 @@ msgstr "Betald via Lönespecifikation"
 msgid "Parent Goal"
 msgstr "Övergripande Mål"
 
-#: hrms/setup.py:390
+#: hrms/setup.py:393
 msgid "Part-time"
 msgstr "Deltid"
 
@@ -7639,7 +7649,7 @@ msgstr "Lönekorrigering"
 msgid "Payroll Correction Child"
 msgstr "Underordnad Lönekorrigering"
 
-#: hrms/setup.py:110 hrms/setup.py:281
+#: hrms/setup.py:110 hrms/setup.py:284
 msgid "Payroll Cost Center"
 msgstr "Lön Resultat Enhet"
 
@@ -7703,7 +7713,7 @@ msgstr "Lön Nummer"
 #: hrms/payroll/doctype/bulk_salary_structure_assignment/bulk_salary_structure_assignment.json
 #: hrms/payroll/doctype/payroll_entry/payroll_entry.json
 #: hrms/payroll/doctype/salary_structure_assignment/salary_structure_assignment.json
-#: hrms/setup.py:834
+#: hrms/setup.py:837
 msgid "Payroll Payable Account"
 msgstr "Löneutbetalning Konto"
 
@@ -7820,7 +7830,7 @@ msgstr "Permanent annullera {0}"
 msgid "Permanently submit {0}"
 msgstr "Permanent godkänn {0}"
 
-#: hrms/setup.py:394
+#: hrms/setup.py:397
 msgid "Piecework"
 msgstr "Ackord"
 
@@ -8157,15 +8167,15 @@ msgstr "Kapital Belopp"
 msgid "Printed On {0}"
 msgstr "Utskriven {0}"
 
-#: hrms/setup.py:373 hrms/setup.py:374
+#: hrms/setup.py:376 hrms/setup.py:377
 msgid "Privilege Leave"
 msgstr "Privilegierad Frånvaro"
 
-#: hrms/setup.py:391
+#: hrms/setup.py:394
 msgid "Probation"
 msgstr "Prov"
 
-#: hrms/setup.py:405
+#: hrms/setup.py:408
 msgid "Probationary Period"
 msgstr "Prov Period"
 
@@ -8177,7 +8187,7 @@ msgstr "Hämta Närvaro Efter"
 #. Label of the process_payroll_accounting_entry_based_on_employee (Check)
 #. field in DocType 'Payroll Settings'
 #: hrms/payroll/doctype/payroll_settings/payroll_settings.json
-#: hrms/setup.py:845
+#: hrms/setup.py:848
 msgid "Process Payroll Accounting Entry based on Employee"
 msgstr "Behandla Lön Bokföring Post per Anställd"
 
@@ -8550,7 +8560,7 @@ msgstr "Ta Bort om Värde är Noll"
 msgid "Rented Car"
 msgstr "Hyrbil"
 
-#: hrms/setup.py:818 hrms/setup.py:827
+#: hrms/setup.py:821 hrms/setup.py:830
 msgid "Repay From Salary"
 msgstr "Återbetala Från Lön"
 
@@ -8635,7 +8645,7 @@ msgstr "Erfordras för att skapa Personal"
 msgid "Reschedule Interview"
 msgstr "Boka om Intervju"
 
-#: hrms/setup.py:411
+#: hrms/setup.py:414
 msgid "Responsibilities"
 msgstr "Ansvar"
 
@@ -8958,7 +8968,7 @@ msgstr "Löneregister"
 #: hrms/payroll/doctype/employee_benefit_ledger/employee_benefit_ledger.json
 #: hrms/payroll/doctype/payroll_settings/payroll_settings.json
 #: hrms/payroll/doctype/salary_slip/salary_slip.json
-#: hrms/payroll/workspace/payroll/payroll.json hrms/setup.py:309
+#: hrms/payroll/workspace/payroll/payroll.json hrms/setup.py:312
 #: hrms/workspace_sidebar/payroll.json
 msgid "Salary Slip"
 msgstr "Lönespecifikation"
@@ -9606,7 +9616,8 @@ msgstr "Skift Plats"
 msgid "Shift Request"
 msgstr "Skift Begäran"
 
-#: hrms/setup.py:138 hrms/setup.py:260
+#: hrms/patches/v15_0/update_approver_custom_fields.py:27 hrms/setup.py:138
+#: hrms/setup.py:262
 msgid "Shift Request Approver"
 msgstr "Skift Begäran Godkännare"
 
@@ -9749,7 +9760,7 @@ msgstr "Visa Lönespecifikation"
 msgid "Showing"
 msgstr "Visning"
 
-#: hrms/setup.py:365 hrms/setup.py:366
+#: hrms/setup.py:368 hrms/setup.py:369
 msgid "Sick Leave"
 msgstr "Sjuk Frånvaro"
 
@@ -9904,7 +9915,7 @@ msgstr "Statistisk Komponent"
 msgid "Status for Other Half"
 msgstr "Status för andra halvan"
 
-#: hrms/setup.py:408
+#: hrms/setup.py:411
 msgid "Stock Options"
 msgstr "Lager Optioner"
 
@@ -10252,7 +10263,8 @@ msgstr "Det finns ingen Löneart tilldelad till {0}. Tilldela Löneart först."
 msgid "There's no Employee with Salary Structure: {0}. Assign {1} to an Employee to preview Salary Slip"
 msgstr "Det finns ingen personal med Löneart: {0}. Tilldela {1} till personal för att förhandsgranska Lönespecifikation"
 
-#. Description of the 'Is Optional Leave' (Check) field in DocType 'Leave Type'
+#. Description of the 'Leave for optional holiday' (Check) field in DocType
+#. 'Leave Type'
 #: hrms/hr/doctype/leave_type/leave_type.json
 msgid "These leaves are holidays permitted by the company however, availing it is optional for an Employee."
 msgstr "Dessa Frånvaro är helgdagar som är tillåtna av Bolaget, men att använda dem är valfri för Personal."
@@ -10541,11 +10553,11 @@ msgstr "Totalt Valutaväxling Resultat"
 msgid "Total Exemption Amount"
 msgstr "Totalt Undantag Belopp"
 
-#: hrms/setup.py:299
+#: hrms/setup.py:302
 msgid "Total Expense Claim (via Expense Claim)"
 msgstr "Totalt Utlägg (via Utlägg)"
 
-#: hrms/setup.py:290
+#: hrms/setup.py:293
 msgid "Total Expense Claim (via Expense Claims)"
 msgstr "Totalt Utlägg (via Utlägg)"
 
@@ -10568,7 +10580,7 @@ msgstr "Tottalt Timmar (T)"
 msgid "Total Income Tax"
 msgstr "Totalt Inkomst Skatt"
 
-#: hrms/setup.py:791
+#: hrms/setup.py:794
 msgid "Total Interest Amount"
 msgstr "Räntebelopp"
 
@@ -10601,7 +10613,7 @@ msgstr "Totalt Tilldelad Frånvaro"
 msgid "Total Leaves Encashed"
 msgstr "Totalt Uttagen Frånvaro"
 
-#: hrms/setup.py:805
+#: hrms/setup.py:808
 msgid "Total Loan Repayment"
 msgstr "Låneåterbetalning"
 
@@ -10638,7 +10650,7 @@ msgstr "Total Utbetalning"
 msgid "Total Present"
 msgstr "Totalt Närvarande"
 
-#: hrms/setup.py:782
+#: hrms/setup.py:785
 msgid "Total Principal Amount"
 msgstr "Totalt Huvudbelopp"
 
@@ -10859,7 +10871,7 @@ msgstr "Överföring Datum"
 
 #. Label of a Card Break in the Expenses Workspace
 #. Label of a Workspace Sidebar Item
-#: hrms/hr/workspace/expenses/expenses.json hrms/setup.py:336
+#: hrms/hr/workspace/expenses/expenses.json hrms/setup.py:339
 #: hrms/workspace_sidebar/expenses.json
 msgid "Travel"
 msgstr "Resa"
@@ -11247,7 +11259,7 @@ msgstr "Varning: Frånvaro Ansökan innehåller följande spärrade datum"
 msgid "Warning: {0} already has an active Shift Assignment {1} for some/all of these dates."
 msgstr "Varning: {0} har redan en aktiv Skift Tilldelning {1} för några/alla dessa datum."
 
-#: hrms/setup.py:398
+#: hrms/setup.py:401
 msgid "Website Listing"
 msgstr "Webbplats Lista"
 
