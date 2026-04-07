@@ -22,6 +22,8 @@ services:
       - SHELL=/bin/bash
     volumes:
       - bench-data:/home/frappe/frappe-bench
+    expose:
+      - "8000"
 
 volumes:
   mariadb-data:
