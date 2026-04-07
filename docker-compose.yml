@@ -17,13 +17,10 @@ services:
     image: redis:alpine
 
   frappe:
-    image: frappe/bench:latest
-    command: bash docker/init.sh
+    build: .
     environment:
       - SHELL=/bin/bash
-    working_dir: /workspace
     volumes:
-      - .:/workspace
       - bench-data:/home/frappe/frappe-bench
 
 volumes:
