@@ -8,6 +8,7 @@ RUN chmod +x /workspace/docker/init.sh
 # Switch back to the frappe user
 USER frappe
 WORKDIR /workspace
+EXPOSE 8000
 
 # Start the initialization script
 ENTRYPOINT ["bash", "docker/init.sh"]
