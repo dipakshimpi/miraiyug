@@ -38,5 +38,6 @@ bench --site hrms.localhost set-config developer_mode 1
 bench --site hrms.localhost enable-scheduler
 bench --site hrms.localhost clear-cache
 bench use hrms.localhost
+bench set-config -g default_site hrms.localhost
 
 bench start

@@ -22,6 +22,11 @@ services:
       - SHELL=/bin/bash
     volumes:
       - bench-data:/home/frappe/frappe-bench
+    labels:
+      - "coolify.service=frappe"
+      - "traefik.enable=true"
+      - "traefik.http.routers.frappe.rule=Host(`${COOLIFY_FQDN}`)"
+      - "traefik.http.services.frappe.loadbalancer.server.port=8000"
     expose:
       - "8000"
 
